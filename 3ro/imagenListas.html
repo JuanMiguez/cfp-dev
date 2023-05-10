@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagenes y listas</title>
+</head>
+<body>
+    <h1>Imagenes y listas</h1>
+    <h2>imagenes</h2>
+    <p>las imagenes se agregan utilizando la etiqueta <code> &#60;img&#62; </code> esta etiqueta es auto completada y tiene algunos atributos especiales</p>
+    
+    <img src="img/dragon.jpg" alt="dragon azul primer plano ">
+    <!--el atributo src indica el origen de la imagen. y utiliza, como origen, la ruta desde donde esta el archivo html  -->
+    <!--el atributo alt es obligatorio y sirve para que los buscadores indexen las imagenes y los lectores de pantalla puedan dar informacion sobre el contenido de las mismas-->
+    <!-- hay otras formas de poner una imagen: utilizando una url como se muestran a continuacion-->
+    <img src="https://www.mundodeportivo.com/alfabeta/hero/2018/10/27763.dragon5.jpg" width="100px" alt="dragon con las alas extendidas">
+    
+    <!--en este caso se dice que la ruta es absoluta-->
+    
+    <!--Listas-->
+
+    <h3>Cosas para llevar a parque norte</h3>
+    <ul> <!--la etiqueta <ul>  define el inicio de una lista NO Ordenada-->
+        <li>pelota futbol</li> <!--<li> define un item de la lista -->
+        <li>pelota basket</li>
+        <li>cartas de truco</li>
+
+    </ul>
+
+    <ol> <!-- La etiqueta <ol> define el inicio de una lista Ordenada-->
+        <li>Argentina</li>
+        <li>Francia</li>
+        <li>Croacia</li>
+        <li>Marruecos</li>
+    </ol>
+
+    <!--vinculos-->
+    <p>los Vinculos o links son accesos a otras paginas o recursos en la web. <br>
+        tienen un atributo propio que se llama href, que define la ubicacion a donde se dirije el vinculo <br>
+        la etiqueta <code> &#60;a&#62; </code> tiene apertura y cierre. el contenido es lo que se ve en la pagina    </p>
+    <a href="http://www.dominio/ruta/recurso.algo">Lo que se ve</a> <!--Los vinculos o links se definen usando la etiqueta <a> -->
+    
+    <p>el atributo href puede adoptar tres formas distintas:</p>
+    <ul>
+        <li><b>Vinculos relativos</b>: como las imagenes, tienen una ruta usando como referencia el lugar donde se encuentre el documento .html </li>
+        <li><b>Vinculo Absoluto</b>: esto tambien es lo mismo que con las imagenes. podemos usar una url completa. siempre teniendo en cuenta no usar un link de busqueda sino la url concreta del recurso a vincular</li>
+        <li><b>Vinculo Ancla</b>: los vinculos ancla se usan para referenciar a las distintas partes del mismo documento. para utilizarlo se debe usar el atributo global id que debe ser unico en el documento</li>
+    </ul>
+    <p>por otro lado los vinculos tiene otro atributo llamado target</p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel" target="_blank" rel="noopener noreferrer">usando el atributo target</a>
+    <p>el atributo target junto con rel definen como se va comportar el vinculo, en este caso usando el valor _blank nos abre una nueva pestaña y sin referencias a la pagina actual  </p>
+</body>
+</html>
